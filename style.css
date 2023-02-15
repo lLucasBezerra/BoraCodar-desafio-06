@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(167.96deg, #8257E5 0%, #271A45 100%);
+    font-family: "Rubik", sans-serif;
+}
+#app{
+    height: 100vh;
+    width: 100vw;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+p{
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+main{
+    position: relative;
+    background-color: white;
+    border-radius: 24px;
+    padding-block: 24px;
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);
+}
+.section-i{
+    border-bottom: 2px dashed rgba(0, 0, 0, 0.44);
+    padding-inline:32px;
+    margin-bottom: 24px;
+}
+.information{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+.description{
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    font-size: 16px;
+}
+.odd{
+    text-align: end;
+}
+.description small{
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.64);
+}
+.hour{
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 16px;
+}
+h1{
+    font-size: 40px;
+    color: rgba(0, 0, 0, 0.88);
+}
+.plane{
+    transform: rotate(90deg);
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.8);
+}
+.boarding{
+    background-color: #633BBC;
+    color: white;
+    width: 54px;
+    padding: 4px 8px 4px 8px;
+    border-radius: 8px;
+}
+.section-i:nth-child(3){
+    border: none;
+}
+.boarding-info{
+    margin-bottom: 16px;
+}
+.notice{
+    margin-top: 24px;
+    text-align: center;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.8);
+}
+footer{
+    margin-top: 20px;
+    text-align: center;
+    width: 270px;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.76);
+}
+.balls{
+    width: 24px;
+    height: 12px;
+    box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.44);
+    border-radius: 150px 150px 0 0;
+    
+    position: absolute;
+    background-color: #633BBC;
+}
+.balls[data-key="1"]{
+    top: 35%;
+    transform: translate(-27%, -50%) rotate(90deg);
+}
+.balls[data-key="2"]{
+    top: 51%;
+    transform: translate(-27%, -50%) rotate(90deg);
+}
+.balls[data-key="3"]{
+    right: 0;
+    top: 35%;
+    transform: translate(27%, -50%) rotate(-90deg);
+}
+.balls[data-key="4"]{
+    right: 0;
+    top: 51%;
+    transform: translate(27%, -50%) rotate(-90deg);
+}
