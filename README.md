@@ -11,4 +11,3 @@
 ### 🛠️ tecnologias usadas:
 + HTML
 + CSS
-+ JavaScript
